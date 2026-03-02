@@ -26,3 +26,21 @@
   target: oca $ODOO_VERSION
   merges:
     - oca $ODOO_VERSION
+
+./l10n-spain:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    oca: https://github.com/OCA/l10n-spain.git
+  target: oca $ODOO_VERSION
+  merges:
+    - oca $ODOO_VERSION
+
+./partner-contact:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    oca: https://github.com/OCA/partner-contact.git
+  target: oca $ODOO_VERSION
+  merges:
+    - oca $ODOO_VERSION

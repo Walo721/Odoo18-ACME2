@@ -3,3 +3,7 @@ contract: "*"
 web: "*"
 
 project: "*"
+
+l10n-spain: "*"
+
+partner-contact: "*"
