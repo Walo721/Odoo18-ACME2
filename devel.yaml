@@ -52,6 +52,7 @@ services:
       - proxy_cdnjs_cloudflare_com
       - proxy_fonts_googleapis_com
       - proxy_fonts_gstatic_com
+      - proxy_publications_europa_eu
       - proxy_www_google_com
       - proxy_www_googleapis_com
       - proxy_www_gravatar_com
@@ -100,6 +101,17 @@ services:
     init: true
 
   # Whitelist outgoing traffic for tests, reports, etc.
+  proxy_publications_europa_eu:
+    image: ghcr.io/tecnativa/docker-whitelist:latest
+    networks:
+      default:
+        aliases:
+          - publications.europa.eu
+      public:
+    environment:
+      TARGET: publications.europa.eu
+      PRE_RESOLVE: 1
+
   proxy_cdnjs_cloudflare_com:
     image: ghcr.io/tecnativa/docker-whitelist:latest
     networks:
