@@ -44,3 +44,21 @@
   target: oca $ODOO_VERSION
   merges:
     - oca $ODOO_VERSION
+
+./field-service:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    oca: https://github.com/OCA/field-service.git
+  target: oca $ODOO_VERSION
+  merges:
+    - oca $ODOO_VERSION
+
+./helpdesk:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    oca: https://github.com/OCA/helpdesk.git
+  target: oca $ODOO_VERSION
+  merges:
+    - oca $ODOO_VERSION
