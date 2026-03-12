@@ -9,56 +9,11 @@
   merges:
     - ocb $ODOO_VERSION
 
-./contract:
-  defaults:
-    depth: $DEPTH_DEFAULT
-  remotes:
-    oca: https://github.com/OCA/contract.git
-  target: oca $ODOO_VERSION
-  merges:
-    - oca $ODOO_VERSION
-
-./web:
-  defaults:
-    depth: $DEPTH_DEFAULT
-  remotes:
-    oca: https://github.com/OCA/web.git
-  target: oca $ODOO_VERSION
-  merges:
-    - oca $ODOO_VERSION
-
-./l10n-spain:
-  defaults:
-    depth: $DEPTH_DEFAULT
-  remotes:
-    oca: https://github.com/OCA/l10n-spain.git
-  target: oca $ODOO_VERSION
-  merges:
-    - oca $ODOO_VERSION
-
-./partner-contact:
-  defaults:
-    depth: $DEPTH_DEFAULT
-  remotes:
-    oca: https://github.com/OCA/partner-contact.git
-  target: oca $ODOO_VERSION
-  merges:
-    - oca $ODOO_VERSION
-
 ./field-service:
   defaults:
-    depth: $DEPTH_DEFAULT
+    depth: 100
   remotes:
     oca: https://github.com/OCA/field-service.git
-  target: oca $ODOO_VERSION
+  target: oca ab9e0933d155b29cb9001ab8a255e3d3320c039a
   merges:
-    - oca $ODOO_VERSION
-
-./helpdesk:
-  defaults:
-    depth: $DEPTH_DEFAULT
-  remotes:
-    oca: https://github.com/OCA/helpdesk.git
-  target: oca $ODOO_VERSION
-  merges:
-    - oca $ODOO_VERSION
+    - oca ab9e0933d155b29cb9001ab8a255e3d3320c039a
