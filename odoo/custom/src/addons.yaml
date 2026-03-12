@@ -11,3 +11,7 @@ partner-contact: "*"
 field-service: "*"
 
 helpdesk: "*"
+
+maintenance: "*"
+
+fleet: "*"
